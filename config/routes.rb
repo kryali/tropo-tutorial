@@ -2,6 +2,9 @@ TropoTutorial::Application.routes.draw do
 
   match "messaging" => "Messagings#index"
 
+  match "send_text" => "Messagings#send_text"
+  match "receive" => "Messagings#receive", :as => "receive"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
