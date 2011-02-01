@@ -60,10 +60,7 @@ class MessagingsController < ApplicationController
   def parse(input)
     input.strip!
     if m = input.match(/^(n|N)\s+/)
-      Tropo::Generator.say "Fuck you Peter"
-    else
-      Tropo::Generator.say "Fuck you Peter"
-      #Tropo::Generator.say "Unsupported operation"
+      Tropo::Generator.say "Test Message"
     end
   end
 
